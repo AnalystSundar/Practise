@@ -1,0 +1,32 @@
+questions=("What is your name?:",
+           "What is your mother name?:",
+           "what is your father name?:")
+options=((" A.Arun","B.Sundar","C.Chandru"),
+         ("A.Amirtha","B.Thamilarasi","C.Palaniammal"),
+         ("A.Prabakaran","B.Chinadurai","C.Murugaesan"))
+answers=("A","B","C")
+guesses=[]
+score=0
+q=0
+question_num=0
+for question in questions:
+    print("****************************************************")
+    print(question)
+    for option in options[question_num]:
+        print(option)
+
+    guess=input("Enter A or B or C").upper()
+    guesses.append(guess)
+    if guess==answers[question_num]:
+        score +=100
+        q+=1
+        print("Corrct")
+    else:
+        print("incorrect")
+    question_num +=1
+print("Out of 3 question you have",q,"questions correct:","\nFinal score out of 300 is :",score)
+
+
+
+
+
