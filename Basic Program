@@ -1,0 +1,49 @@
+Python Program challenge:
+Program 1:#sum of add two numbers
+
+Method 1: Basic 
+a=15
+b=16
+sum=a+b
+print("sum of", a,"and",b, "is:",sum)
+Method 2:Getting the input from the user
+a=int(input("Enter the number"))
+b=int(input("Enter the second number"))
+sum=a+b
+print("Sum of the entered number is :",sum)
+Method 3:Defining the function and calling it 
+def add(a,b): # defining the function
+    return a+b
+sum=add(5,4) #calling the defined function with the value
+print("sum of entered value",sum)
+Method 4: using operator.add() method
+import operator
+a=10
+b=5
+sum=operator.add(a,b)
+print(sum)
+Method 5: using lambda function
+addition=lambda a,b:a+b # creating a lambda function
+num1=5 #declaring the value to the varaiable
+num2=6
+sum=addition(num1,num2) # calling the lambda function
+print("result is:",sum) #printing the result
+
+Method 6:recursive function
+
+def addition(x,y):# defining a function
+    if y==0:
+        return x
+    else:
+        return addition(x+1,y-1)# calling a function inside the function
+
+num1=3
+num2=5
+result=addition(num1,num2)
+print("the sum is :",result)
+
+Output:
+the sum is : 20
+
+
+
